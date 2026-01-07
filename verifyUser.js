@@ -12,6 +12,7 @@ async function verifyUser(req, res, next) {
     console.log("METHOD:", req.method);
     console.log("URL:", req.originalUrl);
     console.log("AUTH:", req.headers.authorization);
+
     let token;
     if (req.headers.authorization) {
       const parts = req.headers.authorization.split(" ");
