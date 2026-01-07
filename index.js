@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3003
+const port = process.env.BACKEND_SERVER || 3003
 const Get = require('./routes/get')
 const Post = require('./routes/post')
 const Put = require("./routes/put")
