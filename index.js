@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = process.env.BACKEND_SERVER || 3003
 const Get = require('./routes/get')
 const Post = require('./routes/post')
 const Put = require("./routes/put")
@@ -9,6 +8,8 @@ const Patch = require("./routes/patch")
 const dotenv = require('dotenv')
 const cors= require("cors")
 const  verifyUser  = require("./verifyUser")
+dotenv.config()
+const port = process.env.PORT || 3003
 
 
 
