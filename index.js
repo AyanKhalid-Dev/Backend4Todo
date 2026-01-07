@@ -9,8 +9,9 @@ const dotenv = require('dotenv')
 const cors= require("cors")
 const  verifyUser  = require("./verifyUser")
 dotenv.config()
-const port = process.env.PORT
-
+const port =process.env.PORT || 3003
+console.log(`port is: ${port}`)
+console.log("PORT:", port)
 
 
 app.use(express.json())
@@ -25,5 +26,5 @@ app.patch('/',verifyUser, Patch)
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port http://localhost:${port}`)
 })
