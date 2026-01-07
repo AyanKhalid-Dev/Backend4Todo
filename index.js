@@ -9,7 +9,7 @@ const dotenv = require('dotenv')
 const cors= require("cors")
 const  verifyUser  = require("./verifyUser")
 dotenv.config()
-const port = process.env.PORT || 3003
+const port = process.env.PORT
 
 
 
