@@ -43,7 +43,7 @@
 // module.exports = verifyUser;
 
 
-const supabase = require("./supabaseclient");
+const supabase = require("./routes/supabaseclient");
 
 async function verifyUser(req, res, next) {
   try {
