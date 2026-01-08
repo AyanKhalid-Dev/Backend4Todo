@@ -25,7 +25,7 @@
 // }
 // module.exports = Delete
 
-const supabase = require("../supabaseclient");
+const supabase = require("./supabaseclient");
 
 async function Delete(req, res) {
   const { id } = req.body;

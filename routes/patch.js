@@ -24,7 +24,7 @@
 
 // module.exports = Patch;
 
-const supabase = require("../supabaseclient");
+const supabase = require("./supabaseclient");
 
 async function Patch(req, res) {
   const { id, isCompleted } = req.body;

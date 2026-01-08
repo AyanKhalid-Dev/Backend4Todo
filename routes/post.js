@@ -30,7 +30,7 @@
 // module.exports = Post
 
 
-const supabase = require("../supabaseclient");
+const supabase = require("./supabaseclient");
 
 async function Post(req, res) {
   const { todo } = req.body;

@@ -22,7 +22,7 @@
 // }
 // module.exports = Put
 
-const supabase = require("../supabaseclient");
+const supabase = require("./supabaseclient");
 
 async function Put(req, res) {
   const { id, newTodo } = req.body;

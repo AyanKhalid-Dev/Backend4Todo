@@ -13,7 +13,7 @@
 // module.exports = Get
 
 
-const supabase = require("../supabaseclient");
+const supabase = require("./supabaseclient");
 
 async function Get(req, res) {
   const { data, error } = await supabase
